@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class MyImage extends StatelessWidget {
@@ -62,6 +63,21 @@ class MyImage extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            color: Colors.black12,
+            child: const Text('Contoh gambar cache'),
+          ),
+          CachedNetworkImage(
+            imageUrl:
+                'https://images.unsplash.com/photo-1532264523420-881a47db012d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9',
+          ),
+           const SizedBox(
+            height: 50,
           ),
         ]));
   }

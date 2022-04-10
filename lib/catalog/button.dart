@@ -66,9 +66,10 @@ class MyButton extends StatelessWidget {
           Center(
             child: ElevatedButton(
               onPressed: () {},
-              style: ButtonStyle(
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0))),
+              style: OutlinedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30), // <-- Radius
+                ),
               ),
               child: const Text("Button rounded"),
             ),
@@ -98,6 +99,19 @@ class MyButton extends StatelessWidget {
                   )),
             ),
           ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                shape: const CircleBorder(),
+                padding: const EdgeInsets.all(10),
+              ),
+              child: const Icon(
+                Icons.add,
+                size: 18,
+              ),
+            ),
+          ),
           const SizedBox(
             height: 30,
           ),
@@ -119,9 +133,10 @@ class MyButton extends StatelessWidget {
           Center(
             child: OutlinedButton(
               onPressed: () {},
-              style: ButtonStyle(
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0))),
+              style: OutlinedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30), // <-- Radius
+                ),
               ),
               child: const Text("Button rounded"),
             ),
@@ -149,6 +164,19 @@ class MyButton extends StatelessWidget {
                     Icons.add,
                     size: 18,
                   )),
+            ),
+          ),
+          Center(
+            child: OutlinedButton(
+              onPressed: () {},
+              style: OutlinedButton.styleFrom(
+                shape: const CircleBorder(),
+                padding: const EdgeInsets.all(10),
+              ),
+              child: const Icon(
+                Icons.add,
+                size: 18,
+              ),
             ),
           ),
           const SizedBox(
