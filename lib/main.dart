@@ -1,3 +1,4 @@
+import 'package:catalog/catalog/button.dart';
 import 'package:catalog/catalog/counter.dart';
 import 'package:catalog/catalog/image.dart';
 import 'package:catalog/catalog/text.dart';
@@ -77,6 +78,19 @@ class MenuCatalog extends StatelessWidget {
                 child: const Text('View'),
                 onPressed: () {
                   goto(const MyText());
+                },
+              )),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Button',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+              child: ElevatedButton(
+                child: const Text('View'),
+                onPressed: () {
+                  goto(const MyButton());
                 },
               )),
         ]));

@@ -12,7 +12,8 @@ class MyImage extends StatelessWidget {
         body: ListView(children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15),
-            child: const Text('Contoh gambar'),
+            color: Colors.black12,
+            child: const Text('Contoh gambar local assets'),
           ),
           const Image(image: AssetImage('assets/images/luffy.jpeg')),
           const SizedBox(
@@ -20,7 +21,20 @@ class MyImage extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.all(15),
+            color: Colors.black12,
+            child: const Text('Contoh gambar network'),
+          ),
+          Image.network('https://picsum.photos/250?image=9'),
+          const SizedBox(
+            height: 30,
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            color: Colors.black12,
             child: const Text('Contoh gambar avatar'),
+          ),
+          const SizedBox(
+            height: 50,
           ),
           const CircleAvatar(
             radius: 50.0,
