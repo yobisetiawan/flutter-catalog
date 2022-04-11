@@ -1,8 +1,11 @@
 import 'package:catalog/catalog/button.dart';
 import 'package:catalog/catalog/card.dart';
+import 'package:catalog/catalog/column.dart';
 import 'package:catalog/catalog/counter.dart';
+import 'package:catalog/catalog/form_input.dart';
 import 'package:catalog/catalog/icon.dart';
 import 'package:catalog/catalog/image.dart';
+import 'package:catalog/catalog/row.dart';
 import 'package:catalog/catalog/text.dart';
 import 'package:flutter/material.dart';
 
@@ -47,41 +50,44 @@ class MenuCatalog extends StatelessWidget {
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
-              child: ElevatedButton(
-                child: const Text('View'),
-                onPressed: () {
-                  goto(const MyCounter(
-                    title: 'Counter',
-                  ));
-                },
-              )),
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyCounter(
+                  title: 'Counter',
+                ));
+              },
+            ),
+          ),
           Container(
             padding: const EdgeInsets.all(15),
             child: const Text('Widget: Image',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
-              child: ElevatedButton(
-                child: const Text('View'),
-                onPressed: () {
-                  goto(const MyImage());
-                },
-              )),
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyImage());
+              },
+            ),
+          ),
           Container(
             padding: const EdgeInsets.all(15),
             child: const Text('Widget: Text',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
-              child: ElevatedButton(
-                child: const Text('View'),
-                onPressed: () {
-                  goto(const MyText());
-                },
-              )),
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyText());
+              },
+            ),
+          ),
           Container(
             padding: const EdgeInsets.all(15),
             child: const Text('Widget: Icon',
@@ -101,26 +107,70 @@ class MenuCatalog extends StatelessWidget {
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
-              child: ElevatedButton(
-                child: const Text('View'),
-                onPressed: () {
-                  goto(const MyButton());
-                },
-              )),
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyButton());
+              },
+            ),
+          ),
           Container(
             padding: const EdgeInsets.all(15),
             child: const Text('Widget: Card',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
-              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
-              child: ElevatedButton(
-                child: const Text('View'),
-                onPressed: () {
-                  goto(const MyCard());
-                },
-              )),
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyCard());
+              },
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Row',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyRow());
+              },
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Column',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyColumn());
+              },
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Form Input',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyFormInput());
+              },
+            ),
+          ),
         ]));
   }
 }
