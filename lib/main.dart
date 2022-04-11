@@ -1,5 +1,7 @@
 import 'package:catalog/catalog/button.dart';
+import 'package:catalog/catalog/card.dart';
 import 'package:catalog/catalog/counter.dart';
+import 'package:catalog/catalog/icon.dart';
 import 'package:catalog/catalog/image.dart';
 import 'package:catalog/catalog/text.dart';
 import 'package:flutter/material.dart';
@@ -82,6 +84,19 @@ class MenuCatalog extends StatelessWidget {
               )),
           Container(
             padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Icon',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+              child: ElevatedButton(
+                child: const Text('View'),
+                onPressed: () {
+                  goto(const MyIcon());
+                },
+              )),
+          Container(
+            padding: const EdgeInsets.all(15),
             child: const Text('Widget: Button',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
@@ -91,6 +106,19 @@ class MenuCatalog extends StatelessWidget {
                 child: const Text('View'),
                 onPressed: () {
                   goto(const MyButton());
+                },
+              )),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Card',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+              padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+              child: ElevatedButton(
+                child: const Text('View'),
+                onPressed: () {
+                  goto(const MyCard());
                 },
               )),
         ]));
