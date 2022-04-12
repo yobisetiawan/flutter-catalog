@@ -13,8 +13,10 @@ import 'package:catalog/catalog/loading.dart';
 import 'package:catalog/catalog/radio.dart';
 import 'package:catalog/catalog/row.dart';
 import 'package:catalog/catalog/slider.dart';
+import 'package:catalog/catalog/stack.dart';
 import 'package:catalog/catalog/switch.dart';
 import 'package:catalog/catalog/text.dart';
+import 'package:catalog/catalog/wrap.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -74,6 +76,14 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyColumn(),
         "title": const Text("Widget: Column"),
+      },
+      {
+        "to": const MyWrap(),
+        "title": const Text("Widget: Wrap"),
+      },
+      {
+        "to": const MyStack(),
+        "title": const Text("Widget: Stack"),
       },
       {
         "to": const MyFormInput(),
