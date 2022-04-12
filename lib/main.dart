@@ -9,6 +9,7 @@ import 'package:catalog/catalog/image.dart';
 import 'package:catalog/catalog/list_view.dart';
 import 'package:catalog/catalog/list_view2.dart';
 import 'package:catalog/catalog/list_view3.dart';
+import 'package:catalog/catalog/list_view4.dart';
 import 'package:catalog/catalog/loading.dart';
 import 'package:catalog/catalog/radio.dart';
 import 'package:catalog/catalog/row.dart';
@@ -120,6 +121,10 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyListView3(),
         "title": const Text("Widget: ListView Builder"),
+      },
+      {
+        "to": const MyListView4(),
+        "title": const Text("Widget: ListView Multiple"),
       },
     ];
 
