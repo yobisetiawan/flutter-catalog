@@ -12,17 +12,64 @@ class MyListView extends StatelessWidget {
         body: ListView(children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15),
-            color: Colors.black12,
-            child: const Text('Contoh Icon'),
+            child: const Text('Item 1'),
           ),
-          const Icon(
-            Icons.image,
-            size: 64.0,
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 2'),
           ),
-          const Text(
-            'check this link for more icons https://api.flutter.dev/flutter/material/Icons-class.html',
-            textAlign: TextAlign.center,
-          )
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 3'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 4'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 5'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 6'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 7'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 8'),
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 9'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 10'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 11'),
+          ),
+          const Divider(),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Item 12'),
+          ),
+          const Divider(),
+          const Divider(),
         ]));
   }
 }
