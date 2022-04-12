@@ -12,6 +12,7 @@ import 'package:catalog/catalog/list_view3.dart';
 import 'package:catalog/catalog/loading.dart';
 import 'package:catalog/catalog/radio.dart';
 import 'package:catalog/catalog/row.dart';
+import 'package:catalog/catalog/slider.dart';
 import 'package:catalog/catalog/switch.dart';
 import 'package:catalog/catalog/text.dart';
 import 'package:flutter/material.dart';
@@ -85,6 +86,10 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MySwitch(),
         "title": const Text("Widget: Switch"),
+      },
+      {
+        "to": const MySlider(),
+        "title": const Text("Widget: Slider"),
       },
       {
         "to": const MyRadio(),
