@@ -1,10 +1,12 @@
 import 'package:catalog/catalog/button.dart';
 import 'package:catalog/catalog/card.dart';
+import 'package:catalog/catalog/checkbox.dart';
 import 'package:catalog/catalog/column.dart';
 import 'package:catalog/catalog/counter.dart';
 import 'package:catalog/catalog/form_input.dart';
 import 'package:catalog/catalog/icon.dart';
 import 'package:catalog/catalog/image.dart';
+import 'package:catalog/catalog/radio.dart';
 import 'package:catalog/catalog/row.dart';
 import 'package:catalog/catalog/text.dart';
 import 'package:flutter/material.dart';
@@ -41,12 +43,12 @@ class MenuCatalog extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Catalog'),
+          title: const Text('Flutter Catalog'),
         ),
         body: ListView(children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15),
-            child: const Text('Widget: Statefull counter',
+            child: const Text('Widget: Statefull Counter',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
@@ -159,7 +161,7 @@ class MenuCatalog extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.all(15),
-            child: const Text('Widget: Form Input',
+            child: const Text('Widget: TextField',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           Container(
@@ -168,6 +170,34 @@ class MenuCatalog extends StatelessWidget {
               child: const Text('View'),
               onPressed: () {
                 goto(const MyFormInput());
+              },
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Checkbox',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyCheckBox());
+              },
+            ),
+          ),
+           Container(
+            padding: const EdgeInsets.all(15),
+            child: const Text('Widget: Radio Button',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(15, 0, 15, 15),
+            child: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                goto(const MyRadio());
               },
             ),
           ),
