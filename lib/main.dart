@@ -6,6 +6,7 @@ import 'package:catalog/catalog/counter.dart';
 import 'package:catalog/catalog/form_input.dart';
 import 'package:catalog/catalog/icon.dart';
 import 'package:catalog/catalog/image.dart';
+import 'package:catalog/catalog/inkwell.dart';
 import 'package:catalog/catalog/list_view.dart';
 import 'package:catalog/catalog/list_view2.dart';
 import 'package:catalog/catalog/list_view3.dart';
@@ -14,6 +15,7 @@ import 'package:catalog/catalog/loading.dart';
 import 'package:catalog/catalog/radio.dart';
 import 'package:catalog/catalog/row.dart';
 import 'package:catalog/catalog/slider.dart';
+import 'package:catalog/catalog/snack_bar.dart';
 import 'package:catalog/catalog/stack.dart';
 import 'package:catalog/catalog/switch.dart';
 import 'package:catalog/catalog/text.dart';
@@ -71,6 +73,10 @@ class MenuCatalog extends StatelessWidget {
         "title": const Text("Widget: Card"),
       },
       {
+        "to": const MyInkWell(),
+        "title": const Text("Widget: InkWell"),
+      },
+      {
         "to": const MyRow(),
         "title": const Text("Widget: Row"),
       },
@@ -109,6 +115,10 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyLoading(),
         "title": const Text("Widget: Loading"),
+      },
+      {
+        "to": const MySnackBar(),
+        "title": const Text("Widget: SnackBar"),
       },
       {
         "to": const MyListView(),
