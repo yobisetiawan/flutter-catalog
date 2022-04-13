@@ -1,3 +1,4 @@
+import 'package:catalog/catalog/alert.dart';
 import 'package:catalog/catalog/button.dart';
 import 'package:catalog/catalog/card.dart';
 import 'package:catalog/catalog/checkbox.dart';
@@ -135,6 +136,10 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyListView4(),
         "title": const Text("Widget: ListView Multiple"),
+      },
+       {
+        "to": const MyAlert(),
+        "title": const Text("Widget: Alert"),
       },
     ];
 

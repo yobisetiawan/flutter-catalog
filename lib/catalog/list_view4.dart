@@ -6,7 +6,7 @@ class MyListView4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget _buildBox({Color? color}) => Container(
-        margin: const EdgeInsets.all(12),
+        margin: const EdgeInsets.all(5),
         height: 100,
         width: 200,
         color: color);
@@ -28,6 +28,7 @@ class MyListView4 extends StatelessWidget {
       ),
       body: ListView.builder(
         itemCount: 7,
+       
         itemBuilder: (_, i) {
           if (i == 1 || i == 3) {
             return _horizontalListView();

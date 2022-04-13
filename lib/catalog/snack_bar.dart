@@ -20,8 +20,14 @@ class MySnackBar extends StatelessWidget {
             child: TextButton(
               child: const Text('Test Snack Bar'),
               onPressed: () {
-                const snackBar = SnackBar(
-                  content: Text('Yay! A SnackBar!'),
+                final snackBar = SnackBar(
+                  content: const Text('Yay! A SnackBar!'),
+                  action: SnackBarAction(
+                    label: 'Undo',
+                    onPressed: () {
+                      // Some code to undo the change.
+                    },
+                  ),
                 );
 
                 // Find the ScaffoldMessenger in the widget tree
