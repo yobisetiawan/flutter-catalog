@@ -36,11 +36,13 @@ class MyAlert extends StatelessWidget {
                           ],
                         )).then(
                   (value) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('$value'),
-                      ),
-                    );
+                    if (value != null) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('$value'),
+                        ),
+                      );
+                    }
                   },
                 );
               },
@@ -54,24 +56,28 @@ class MyAlert extends StatelessWidget {
                     context: context,
                     barrierDismissible: false,
                     builder: (BuildContext context) => AlertDialog(
-                          title: const Text('Are You Sure?'),
+                          title: const Text('Apakah Anda Yakin?'),
+                          content: const Text(
+                              'Setelah data di hapus data tidak bisa di kembalikan'),
                           actions: [
                             TextButton(
-                              onPressed: () => Navigator.pop(context, 'No'),
-                              child: const Text('No'),
+                              onPressed: () => Navigator.pop(context, 'Tidak'),
+                              child: const Text('Tidak'),
                             ),
                             TextButton(
-                              onPressed: () => Navigator.pop(context, 'Yes'),
-                              child: const Text('Yes'),
+                              onPressed: () => Navigator.pop(context, 'Ya'),
+                              child: const Text('Ya'),
                             )
                           ],
                         )).then(
                   (value) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('$value'),
-                      ),
-                    );
+                    if (value != null) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('$value'),
+                        ),
+                      );
+                    }
                   },
                 );
               },

@@ -3,8 +3,13 @@ import 'package:catalog/catalog/button.dart';
 import 'package:catalog/catalog/card.dart';
 import 'package:catalog/catalog/checkbox.dart';
 import 'package:catalog/catalog/column.dart';
+import 'package:catalog/catalog/container.dart';
 import 'package:catalog/catalog/counter.dart';
+import 'package:catalog/catalog/expand_sizedbox.dart';
+import 'package:catalog/catalog/expansion_tile.dart';
 import 'package:catalog/catalog/form_input.dart';
+import 'package:catalog/catalog/fractionally_sized_box.dart';
+import 'package:catalog/catalog/grid.dart';
 import 'package:catalog/catalog/icon.dart';
 import 'package:catalog/catalog/image.dart';
 import 'package:catalog/catalog/inkwell.dart';
@@ -70,12 +75,16 @@ class MenuCatalog extends StatelessWidget {
         "title": const Text("Widget: Button"),
       },
       {
-        "to": const MyCard(),
-        "title": const Text("Widget: Card"),
+        "to": const MyContainer(),
+        "title": const Text("Widget: Container"),
       },
       {
-        "to": const MyInkWell(),
-        "title": const Text("Widget: InkWell"),
+        "to": const MyFractionallySizedBox(),
+        "title": const Text("Widget: FractionallySizedBox"),
+      },
+      {
+        "to": const MyExpanded(),
+        "title": const Text("Widget: Expanded + SizedBox"),
       },
       {
         "to": const MyRow(),
@@ -92,6 +101,14 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyStack(),
         "title": const Text("Widget: Stack"),
+      },
+      {
+        "to": const MyCard(),
+        "title": const Text("Widget: Card"),
+      },
+      {
+        "to": const MyInkWell(),
+        "title": const Text("Widget: InkWell"),
       },
       {
         "to": const MyFormInput(),
@@ -137,9 +154,21 @@ class MenuCatalog extends StatelessWidget {
         "to": const MyListView4(),
         "title": const Text("Widget: ListView Multiple"),
       },
-       {
+      {
+        "to": const MyGrid(),
+        "title": const Text("Widget: Grid"),
+      },
+      {
+        "to": const MyGrid(),
+        "title": const Text("Widget: Grid"),
+      },
+      {
         "to": const MyAlert(),
         "title": const Text("Widget: Alert"),
+      },
+      {
+        "to": const MyExpansionTile(),
+        "title": const Text("Widget: ExpansionTile"),
       },
     ];
 
@@ -168,7 +197,12 @@ class MenuCatalog extends StatelessWidget {
         itemCount: mapObj1.length * 2,
         // padding: const EdgeInsets.all(16.0),
         itemBuilder: (BuildContext context, int i) {
-          if (i.isOdd) return const Divider(height: 0,);
+          if (i.isOdd) {
+            return const Divider(
+              height: 0,
+            );
+          }
+
           final index = i ~/ 2;
           return _buildItem(index);
         },
