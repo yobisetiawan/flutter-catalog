@@ -19,8 +19,10 @@ import 'package:catalog/catalog/list_view3.dart';
 import 'package:catalog/catalog/list_view4.dart';
 import 'package:catalog/catalog/loading.dart';
 import 'package:catalog/catalog/nav_bottom_sheet.dart';
+import 'package:catalog/catalog/nav_bottom_tab.dart';
 import 'package:catalog/catalog/nav_drawer.dart';
 import 'package:catalog/catalog/nav_tab.dart';
+import 'package:catalog/catalog/navbar_bottom.dart';
 import 'package:catalog/catalog/radio.dart';
 import 'package:catalog/catalog/row.dart';
 import 'package:catalog/catalog/slider.dart';
@@ -172,6 +174,14 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyNavBottomSheet(),
         "title": const Text("Widget: Nav Bottom Sheet"),
+      },
+      {
+        "to": const MyNavBottomTabbarExample(),
+        "title": const Text("Widget: Nav Bottom Tab"),
+      },
+       {
+        "to": const BottomNavigationBarExample(),
+        "title": const Text("Widget: Navbar Bottom"),
       },
       {
         "to": const MyAlert(),
