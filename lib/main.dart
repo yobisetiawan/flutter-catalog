@@ -1,3 +1,7 @@
+import 'package:catalog/get/counter.dart';
+import 'package:catalog/get/local_crud.dart';
+import 'package:get/get.dart';
+
 import 'package:catalog/catalog/alert.dart';
 import 'package:catalog/catalog/button.dart';
 import 'package:catalog/catalog/card.dart';
@@ -34,7 +38,9 @@ import 'package:catalog/catalog/wrap.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const GetMaterialApp(
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -179,7 +185,7 @@ class MenuCatalog extends StatelessWidget {
         "to": const MyNavBottomTabbarExample(),
         "title": const Text("Widget: Nav Bottom Tab"),
       },
-       {
+      {
         "to": const BottomNavigationBarExample(),
         "title": const Text("Widget: Navbar Bottom"),
       },
@@ -190,6 +196,14 @@ class MenuCatalog extends StatelessWidget {
       {
         "to": const MyExpansionTile(),
         "title": const Text("Widget: ExpansionTile"),
+      },
+      {
+        "to": const GetCounter(),
+        "title": const Text("Get: Counter"),
+      },
+      {
+        "to": const GetLocalCrud(),
+        "title": const Text("Get: Local Crud"),
       },
     ];
 
