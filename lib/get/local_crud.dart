@@ -42,7 +42,7 @@ class GetLocalCrud extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Get: Local Crud'),
+        title: const Text('Get: Local CRUD'),
       ),
       body: Obx(() => ListView.builder(
             itemCount: c.list.length * 2,

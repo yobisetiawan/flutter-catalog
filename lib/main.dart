@@ -1,5 +1,6 @@
 import 'package:catalog/get/counter.dart';
 import 'package:catalog/get/local_crud.dart';
+import 'package:catalog/get/todo.dart';
 import 'package:get/get.dart';
 
 import 'package:catalog/catalog/alert.dart';
@@ -203,7 +204,11 @@ class MenuCatalog extends StatelessWidget {
       },
       {
         "to": const GetLocalCrud(),
-        "title": const Text("Get: Local Crud"),
+        "title": const Text("Get: Local CRUD"),
+      },
+        {
+        "to": const GetTodoCrud(),
+        "title": const Text("Get: Todo CRUD"),
       },
     ];
 
