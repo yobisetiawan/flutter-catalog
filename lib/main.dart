@@ -1,5 +1,6 @@
 import 'package:catalog/get/counter.dart';
 import 'package:catalog/get/local_crud.dart';
+import 'package:catalog/get/login.dart';
 import 'package:catalog/get/todo.dart';
 import 'package:get/get.dart';
 
@@ -206,9 +207,13 @@ class MenuCatalog extends StatelessWidget {
         "to": const GetLocalCrud(),
         "title": const Text("Get: Local CRUD"),
       },
-        {
+      {
         "to": const GetTodoCrud(),
         "title": const Text("Get: Todo CRUD"),
+      },
+       {
+        "to": const GetLoginTest(),
+        "title": const Text("Get: Login Test"),
       },
     ];
 
